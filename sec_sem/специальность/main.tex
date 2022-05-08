@@ -4,12 +4,20 @@
 \usepackage[14pt]{extsizes}
 \usepackage[russian]{babel}
 \usepackage{indentfirst}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\fontfamily{ptm}\fontsize{12pt}{12pt}\selectfont\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 \usepackage[mag=1000,a4paper,   	
 		left=2.5cm , right=1.5cm, top=2cm, bottom=2cm,
 	]{geometry}
 
 \linespread{1.15}
 \begin{document}
+
+
 \setlength{\parindent}{1.25cm}
 \input{title.tex}
 \input{text.tex}
